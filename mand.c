@@ -10,14 +10,13 @@ rgb_pixel_t data[WIDTH][HEIGHT];
 	
 void init_palette()
 {
-	int i;
+	int i = 20;
 	int red, green, blue;
 	const rgb_pixel_t black = {0, 0, 0, 0};
 	const rgb_pixel_t white = {255,255,255, 0};
 	
 	palette[0] = white;
 	palette[255] = black;
-	i = 20;
 
 	for (red = 0; red <= 255; red += 51)
 	{
